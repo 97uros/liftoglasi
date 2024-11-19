@@ -1,0 +1,80 @@
+.footer {
+  background-color: $white;
+  font-family: 'Space Grotesk', sans-serif;
+  border-top: $lightgray solid 1px;
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
+  &__logo {
+    img {
+      width: 100%;
+    }
+  }
+  &__contact {
+    p {
+      color: $gray;
+      margin-bottom: 10px;
+     a {
+      color: $gray;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+     }
+    }
+  }
+  &__column {
+    list-style-type: none;
+    @media (max-width: 768px) {
+      margin: 0;
+      padding: 20px 0px;
+      border-bottom: 1px solid $lightgray;
+    }
+    .menu-item {
+      padding-bottom: 10px;
+      a {
+        color: $gray;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  &__social {
+    &-icon {
+      color: $gray;
+      a {
+        padding-left: 10px;
+        color: $gray;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  hr {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  &__copyright {
+    @media (max-width: 768px) {
+      margin-top: 20px;
+    }
+    color: $gray;
+    &-links {
+      .menu-item {
+        padding: 0px 10px;
+        border-right: 2px $lightgray solid;
+        &:last-child {
+          border: none;
+        }
+        a {
+          color: $gray;
+        }
+      }
+    }
+  }
+}

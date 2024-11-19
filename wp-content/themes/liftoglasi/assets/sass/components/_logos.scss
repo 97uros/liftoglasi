@@ -1,0 +1,12 @@
+.logos {
+  padding: 20px 0px;
+  .logo {
+    width: 120px;
+    img {
+      filter: grayscale(1);
+      &:hover {
+        filter: unset;
+      }
+    }
+  }
+}

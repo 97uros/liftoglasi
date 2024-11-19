@@ -1,0 +1,39 @@
+.btn-primary {
+	min-width: 150px;
+	border: 1px solid $primary-blue;
+	background-color: $primary-blue;
+	color: $white;
+	text-align: center;
+	padding: .75rem 2.25rem;
+	border-radius: 0;
+	a {
+		color: $white;
+		text-decoration: none;
+	}
+}
+.btn-secondary {
+	min-width: 150px;
+	border: 1px solid $primary-blue;
+	background-color: $white;
+	color: $primary-blue;
+	text-align: center;
+	padding: .75rem 2.25rem;
+	border-radius: 0;
+	a {
+		color: $primary-blue;
+		text-decoration: none;
+	}
+}
+.btn-tertiary {
+	min-width: 150px;
+	border: 1px solid $gold;
+	background-color: $gold;
+	color: $white;
+	text-align: center;
+	padding: .75rem 2.25rem;
+	border-radius: 0;
+	a {
+		color: $white;
+		text-decoration: none;
+	}
+}

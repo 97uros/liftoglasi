@@ -1,0 +1,137 @@
+.contact {
+	padding: 60px;
+	@media (max-width: 768px) {
+    padding: 30px 0px;
+    text-align: center;
+  }
+	&__heading {
+		padding-bottom: 20px;
+		@media (max-width: 768px) {
+			padding-bottom: 10px;
+		}
+	}
+	&__subheading {
+		padding-bottom: 40px;
+		color: $gray;
+		@media (max-width: 768px) {
+			padding-bottom: 20px;
+		}
+	}
+	&__info-box-group {
+		@media (max-width: 768px) {
+			display: flex;
+			flex-direction: column-reverse;;
+		}
+	}
+	&__info-box {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		background-color: transparent;
+		color: $primary-blue;
+		border: 2px solid $lightgray;
+		padding: 20px;
+		margin-bottom: 20px;
+		&:last-child {
+			margin-bottom: 0;
+			@media (max-width: 768px) {
+				margin-bottom: 20px;
+			}
+		}
+		i {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 30px;
+			border-radius: 50%;
+			height: 50px;
+			width: 50px;
+			border: 2px dotted;
+			margin-bottom: 10px;
+		}
+		h3 {
+			padding-bottom: 10px;
+			color: $black;
+		}
+		a {
+			padding-bottom: 10px;
+			text-decoration: none;
+			color: $primary-blue;
+		}
+	}
+	&__map {
+		iframe {
+			border-radius: 0;
+		}
+	}
+	&__form {
+		font-family: 'Space Grotesk', sans-serif;
+		&_1 {
+			padding: 60px;
+			@media (max-width: 768px) {
+				padding: 30px 20px;
+			}
+			.wpcf7-submit {
+				background-color: $primary-blue;
+				color: $white;
+			}
+		}
+		&_2 {
+			padding: 60px;
+			@media (max-width: 768px) {
+				padding: 30px 20px;
+			}
+			background: linear-gradient(97deg, rgba(0,0,0,0.9) 46%, rgba(45,103,200,0.9) 100%);
+			background-position: bottom;
+			background-repeat: no-repeat;
+			background-size: contain;
+			h3, h4, hr {
+				color: $white;
+			}
+			hr {
+				opacity: 1;
+  		  border-width: 1px;
+				margin-bottom: 20px;
+			}
+			.wpcf7-submit {
+				background-color: $white;
+				color: $primary-blue;
+			}
+		}
+		.wpcf7 {
+			&-form {
+				h3 {
+					padding-bottom: 40px;
+					@media (max-width: 768px) {
+						padding-bottom: 20px;;
+					}
+				}
+				h4 {
+					padding-bottom: 20px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					flex-direction: column-reverse;
+					@media (max-width: 768px) {
+						padding-bottom: 10px;;
+					}
+					i {
+						padding-bottom: 10px;
+					}
+				}
+				label {
+					padding-bottom: 10px;
+					width: 100%;
+				}
+				&-control {
+					padding: 10px;
+					border: 1px solid $lightgray;
+					width: 100%;
+					outline: none;
+					box-shadow: none;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+.widget {
+  &-title {
+    padding-bottom: 20px;
+  }
+  &_search {
+    .search-form {
+      .input-group {
+        .form-control {
+          border-radius: 0;
+          box-shadow: none;
+          outline: none;
+        }
+        &-append {
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+            width: 20% !important;
+          button {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  &_categories {
+    .dropdown {
+      &-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:hover, &:focus {
+          background-color: $primary-blue;
+          color: $white;
+          border-color: $primary-blue;
+        }
+        &::after {
+          display: none;
+        }
+      }
+      &-menu {
+        width: 100%;
+        border-radius: 0;
+      }
+    }
+  }
+}

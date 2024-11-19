@@ -1,0 +1,13 @@
+.document {
+  padding: 160px 0px 60px 0px;
+  &__title {
+    color: $primary-blue;
+    padding-bottom: 30px;
+  }
+  &__content {
+    color: $gray;
+    strong {
+      color: $primary-blue;
+    }
+  }
+}

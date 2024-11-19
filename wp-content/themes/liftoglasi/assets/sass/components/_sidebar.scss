@@ -1,0 +1,49 @@
+.widget-area {
+  border: 1px solid $lightgray;
+  padding: 20px;
+  .widget-title {
+    padding-bottom: 20px;
+  }
+  .widget_search {
+    .search-form {
+      .input-group {
+        .form-control {
+          border-radius: 0;
+        }
+        &-append {
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+            width: 20% !important;
+          button {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .widget_categories, .widget_recent_posts {
+    .list-group {
+      &-item {
+        border-radius: 0;
+        a {
+          color: $lightgray;
+          text-decoration: none;
+        }
+        &:hover {
+          border: 1px solid $primary-blue;
+          a {
+            color: $primary-blue;
+          }
+        }
+        &.current-cat {
+          border: 2px solid $primary-blue;
+          a {
+            color: $primary-blue;
+            font-weight: bold;
+          }
+        }   
+      }
+    }
+  }
+}

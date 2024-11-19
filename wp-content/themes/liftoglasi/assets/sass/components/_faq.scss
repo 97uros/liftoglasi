@@ -1,0 +1,48 @@
+.faq {
+  padding: 60px;
+  @media (max-width: 768px) {
+    padding: 30px 0px;
+    text-align: center;
+  }
+	&__heading {
+		padding-bottom: 40px;
+		@media (max-width: 768px) {
+			padding-bottom: 20px;
+		}
+	}
+  .accordion {
+    border: none;
+    border-radius: 0 !important;
+    &-item {
+      border: none;
+      border-radius: 0 !important;
+    }
+    &-header {
+      box-shadow: none;
+      h3 {
+        font-weight: bold;
+        font-size: 24px;
+        @media (max-width: 768px) {
+          font-size: unset;
+        }
+      }
+    }
+    &-body {
+      p {
+        color: $gray;
+        text-align: start;
+      }
+    }
+    &-button {
+      box-shadow: none;
+      border-radius: 0 !important;
+      border-top: 1px solid $lightgray;
+      &:not(.collapsed) {
+        border-top: 3px solid $primary-blue;
+      }
+    }
+  }
+  &-blog {
+    padding: 0;
+  }
+}

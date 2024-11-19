@@ -1,0 +1,99 @@
+@keyframes premium-border {
+	0% {
+		border-color: $gold;
+	}
+	50% {
+		border-color: $yellow;
+	}
+	100% {
+		border-color: $lightyellow
+	}
+}
+.services {
+	padding: 60px;
+	@media (max-width: 768px) {
+    padding: 30px 0px;
+    text-align: center;
+  }
+	&__heading {
+		padding-bottom: 20px;
+		@media (max-width: 768px) {
+			padding-bottom: 10px;
+		}
+	}
+	&__subheading {
+		padding-bottom: 40px;
+		color: $gray;
+		@media (max-width: 768px) {
+			padding-bottom: 20px;
+		}
+	}
+	.card {
+		height: 500px;
+		overflow: hidden;
+		border: none;
+		border-radius: 0;
+		@media (max-width: 768px) {
+			margin-bottom: 20px;
+		}
+		&.premium {
+			border: 5px solid $gold;
+			animation: premium-border 2s infinite;
+		}
+		&-img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+			scale: 1.1;
+			transition: 1s;
+			border-radius: 0;
+		}		
+		&:hover {
+			img {
+				scale: 1.2;
+				border-radius: 0;
+			}
+		}
+		&-img-overlay {
+			display: flex;
+			justify-content: flex-end;
+			flex-direction: column;
+			padding: 2rem;
+			background: linear-gradient(to top, $black, transparent);
+			border-radius: 0;
+			&:hover {
+				background: linear-gradient(rgba(255, 255, 255, 0), #2d67c8);
+			}
+		}
+		&-title {
+			font-size: 24px;
+			margin: 0;
+		}
+		&-text, a {
+			color: $white;
+			text-decoration: none;
+			i {
+				transition: 1s;
+				padding-left: 10px;
+			}
+			&:hover {
+				text-decoration: underline;
+				i {
+					transition: 1s;
+					padding-left: 20px;
+				}
+			}
+		}
+		.premium-badge {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			background: linear-gradient(to right, $gold, $yellow );
+			color: $white;
+			padding: 5px 10px;
+			font-size: 0.9em;
+			font-weight: bold;
+			border-radius: 5px;
+		}
+	}
+}
